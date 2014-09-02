@@ -84,17 +84,8 @@ YAHOO.util.Event.addListener(window, "load", function() {
 		var comp = YAHOO.util.Sort.compare; 
 		var dataa1= a.getData("Data").substring(0,10);
 		var dataa2= b.getData("Data").substring(0,10);
-		var dia = dataa1.split("/")[0].toString();
-		var mes = dataa1.split("/")[1].toString();
-		var ano = dataa1.split("/")[2].toString();
-		var dia2 = dataa2.split("/")[0].toString();
-		var mes2 = dataa2.split("/")[1].toString();
-		var ano2 = dataa2.split("/")[2].toString();
-		var diatotal = parseInt(dia+mes+ano);
-		var diatotal2 = parseInt(dia+mes2+ano2);
 		var d2=new Date(dataa1.split("/")[2], (dataa1.split("/")[1])-1, dataa1.split("/")[0]);
 		var d1=new Date(dataa2.split("/")[2], (dataa2.split("/")[1])-1, dataa2.split("/")[0]);
-		var dias = (Math.ceil((d1.getTime()-d2.getTime())/1000/60/60/24));
 		var compState = comp(d1.getTime(), d2.getTime(), desc); 
 		// If states are equal, then compare by areacode 
 		return (compState !== 0) ? compState : comp(a.getData("Nome"), b.getData("Nome"), desc); 
