@@ -1,0 +1,19 @@
+body{
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small;
+	*font:x-small;
+}
+select,input,button,textarea{
+	font:99% helvetica,tahoma,verdana,sans-serif;
+	color:#003;
+}
+table{
+	font:100%;
+	color: #003;
+	font-family: helvetica,tahoma,verdana,sans-serif;
+}
+pre,code,kbd,samp,tt{
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
